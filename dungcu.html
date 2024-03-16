@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dụng cụ thể dục thể thao</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="header">
+        <div class="top-bar">
+            <div class="container">
+                <ul class="list-nav-top">
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Vận chuyển & Thanh toán</a></li>
+                    <li><a href="">Hỏi đáp</a></li>
+                    <li><a href="#" onclick="hienlogin()">Đăng nhập</a></li>
+                    <li><a href="#" onclick="hiensignup()">Đăng ký</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="middle-bar">
+            <div class="container">
+                <div class="full-middle">
+                    <div class="logo">
+                        <a href="index.html" title="Dụng cụ thể dục - Chuyên thiết bị dụng cụ thể dục thể thao và thể hình">
+                            <img src="https://dungcutheduc.vn/public/frontend/images/logo.png" alt="Logo header" class="logo-header">
+                        </a>
+                    </div>
+                    <div class="header-search">
+                        <form action="">
+                            <input type="text" placeholder="Hôm nay bạn tìm gì...">
+                            <button>
+                                <i class="fa-solid fa-magnifying-glass"></i> TÌM KIẾM
+                            </button>
+                        </form>
+                    </div>
+                    <div class="tool-header">
+                        <div class="tool-phone">
+                            <a href="#">
+                                <span>
+                                    <i class="fa-solid fa-phone-volume phone-icon"></i>
+                                </span>
+                                <span style="display: inline-block;margin-left: 10px;">
+                                    Hotline <br>
+                                    <span style="color: #ed212d;">0971 425 728</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="tool-cart" style="position: relative;">
+                            <a href="giohang.html">
+                                <span class="quantity-cart">0</span>
+                                <i class="fa-solid fa-cart-shopping phone-icon"></i>
+                                <span style="display: inline-block;">
+                                    <span>Giỏ <br> hàng</span><br>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-bar" id="header-float">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li style="padding-right: 10px;">
+                            <a href="" style="color: #ed212d;">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        </li>
+                        <li class="menu-1">
+                            <a href="">
+                                Máy tập thể dục <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <ul class="mini-nav">
+                                <li><a href="#">Máy Chạy Bộ</a></li>
+                                <li><a href="#">Xe Đạp Tập</a></li>
+                                <li><a href="#">Máy Tập Bụng</a></li>
+                                <li><a href="#">Máy Tập Chân</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-2">
+                            <a href="dungcu.html">
+                                Dụng cụ tập gym <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <ul class="mini-nav">
+                                <li><a href="#">Ghế Tập Tạ</a></li>
+                                <li><a href="#">Giàn Tạ Đa Năng</a></li>
+                                <li><a href="#">Ghế Tập Bụng</a></li>
+                                <li><a href="#">Tạ Tay - Tạ Đơn</a></li>
+                                <li><a href="#">Xà Đơn - Xà Kép</a></li>
+                                <li><a href="#">Phụ Kiện Tập Gym</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-3">
+                            <a href="">
+                                Dụng cụ võ thuật <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <ul class="mini-nav">
+                                <li><a href="#">Bao Cát Đấm Bốc</a></li>
+                                <li><a href="#">Găng Tay Boxing</a></li>
+                                <li><a href="#">Đích Đá - Đích Đấm</a></li>
+                                <li><a href="#">Mũ - Áo Giáp Võ Thuật</a></li>
+                                <li><a href="#">Dụng Cụ Tập Thể Lực</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-4">
+                            <a href="">
+                                Dụng cụ bóng bàn <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <ul class="mini-nav">
+                                <li><a href="#">Bàn Bóng Bàn</a></li>
+                                <li><a href="#">Vợt Bóng Bàn</a></li>
+                                <li><a href="#">Cốt - Mặt Vợt Bóng Bàn</a></li>
+                                <li><a href="#">Máy Bắn Bóng Bàn</a></li>
+                                <li><a href="#">Quả Bóng Bàn</a></li>
+                                <li><a href="#">Phụ Kiện Bóng Bàn</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-5">
+                            <a href="">
+                                Dụng cụ bóng rổ <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <ul class="mini-nav">
+                                <li><a href="#">Quả Bóng Rổ</a></li>
+                                <li><a href="#">Trụ Bóng Rổ</a></li>
+                                <li><a href="#">Phụ Kiện Bóng Rổ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Thiết bị dạy học</a></li>
+                        <li><a href="">Dụng cụ ngoài trời</a></li>
+                        <li class="menu-6">
+                            <a href="">
+                                Khác <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <ul class="mini-nav float-to-right">
+                                <li><a href="#">Ghế Massage</a></li>
+                                <li><a href="#">Thiết Bị Phòng Gym</a></li>
+                                <li><a href="#">Dụng Cụ Tập Yoga</a></li>
+                                <li><a href="#">Dụng Cụ Bóng Đá</a></li>
+                                <li><a href="#">Dụng Cụ Cầu Lông</a></li>
+                                <li><a href="#">Dụng Cụ Bóng Chuyền</a></li>
+                                <li><a href="#">Dụng Cụ Bơi Lội</a></li>
+                                <li><a href="#">Dụng Cụ Tennis</a></li>
+                                <li><a href="#">Dụng Cụ Bóng Chày</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+    <div class="all-dungcu">
+        <div class="breadcrumb">
+            <div class="container">
+                <span>Trang chủ</span>
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span>Dụng Cụ Tập Gym</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title-dungcu-and-banner">
+                <h2 class="title-dungcu">Dụng cụ tập gym</h2>
+                <div class="super-banner">
+                    <img src="./assets/img/banner/banner-dung-cu-the-duc.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="category-one">
+                <div class="container">
+                    <div class="heading-cate">
+                        <div class="heading-title">
+                            <h3>Ghế tập tạ</h3>
+                        </div>
+                        <div class="view-all">
+                            <a href="loaisp.html">
+                                Xem thêm
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="detailproduct.html">
+                                    <img src="/assets/img/product/productsta-tay-jordan-0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="detailproduct.html">Tạ tay Jordan</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsghe-tap-ta-da-nang-xuki-0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Ghế tập tạ đa năng xuki</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-one">
+                <div class="container">
+                    <div class="heading-cate">
+                        <div class="heading-title">
+                            <h3>Giàn tạ đa năng</h3>
+                        </div>
+                        <div class="view-all">
+                            <a href="#">
+                                Xem thêm
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="detailproduct.html">
+                                    <img src="/assets/img/product/productsta-tay-jordan-0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="detailproduct.html">Tạ tay Jordan</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsghe-tap-ta-da-nang-xuki-0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Ghế tập tạ đa năng xuki</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-one">
+                <div class="container">
+                    <div class="heading-cate">
+                        <div class="heading-title">
+                            <h3>Ghế tập bụng</h3>
+                        </div>
+                        <div class="view-all">
+                            <a href="#">
+                                Xem thêm
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="detailproduct.html">
+                                    <img src="/assets/img/product/productsta-tay-jordan-0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="detailproduct.html">Tạ tay Jordan</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsghe-tap-ta-da-nang-xuki-0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Ghế tập tạ đa năng xuki</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-one">
+                <div class="container">
+                    <div class="heading-cate">
+                        <div class="heading-title">
+                            <h3>tạ tay - tạ đơn</h3>
+                        </div>
+                        <div class="view-all">
+                            <a href="#">
+                                Xem thêm
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="detailproduct.html">
+                                    <img src="/assets/img/product/productsta-tay-jordan-0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="detailproduct.html">Tạ tay Jordan</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsghe-tap-ta-da-nang-xuki-0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Ghế tập tạ đa năng xuki</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-one">
+                <div class="container">
+                    <div class="heading-cate">
+                        <div class="heading-title">
+                            <h3>xà đơn - xà kép</h3>
+                        </div>
+                        <div class="view-all">
+                            <a href="#">
+                                Xem thêm
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="detailproduct.html">
+                                    <img src="/assets/img/product/productsta-tay-jordan-0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="detailproduct.html">Tạ tay Jordan</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsghe-tap-ta-da-nang-xuki-0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Ghế tập tạ đa năng xuki</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-one">
+                <div class="container">
+                    <div class="heading-cate">
+                        <div class="heading-title">
+                            <h3>Phụ kiện tập gym</h3>
+                        </div>
+                        <div class="view-all">
+                            <a href="#">
+                                Xem thêm
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="detailproduct.html">
+                                    <img src="/assets/img/product/productsta-tay-jordan-0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="detailproduct.html">Tạ tay Jordan</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsghe-tap-ta-da-nang-xuki-0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Ghế tập tạ đa năng xuki</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-block">
+                            <div class="thumb-item clearfix">
+                                <a href="">
+                                    <img src="/assets/img/product/productsta-tay-bowflex552.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="item-meta">
+                                <div class="item-name">
+                                    <a href="#">Tạ tay bowflex 552</a>
+                                </div>
+                                <div class="item-price">
+                                    <span class="old-price">
+                                        6.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                    <span class="new-price">
+                                        5.000.000
+                                        <i class="fa-solid fa-dong-sign"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="most-question">
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-top">
+            <div class="container footer-top-container">
+                <div class="sub-for-news">
+                    <h4 style="padding: 10px 0;">ĐĂNG KÝ NHẬN TIN</h4>
+                    <span>Cập nhật tin tức, sản phẩm, khuyến mại</span>
+                </div>
+                <div class="input-email">
+                        <form action="">
+                            <input type="text" placeholder="Email của bạn..." class="input-footer">
+                            <button class="btn btn-footer">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                Đăng ký
+                            </button>
+                        </form>
+                </div>
+                <div class="social-link">
+                    <div class="link-mxh link-twitter">
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="link-mxh link-facebook">
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="link-mxh link-youtube">
+                        <a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="footer-container container">
+                <div class="footer-main-left">
+                    <h3 style="padding-bottom: 10px;">DỤNG CỤ <span style="color: #ed212d;">THỂ DỤC THỂ THAO</span></h3>
+                    <p style="margin-bottom: 10px;">Dụng Cụ Thể Dục là đơn vị chuyên bán buôn bán lẻ dụng cụ thể thao, máy tập thể dục và dụng cụ tập Gym. Cam kết chính hãng, giá rẻ nhất tại Việt Nam. Quý khách hàng có nhu cầu mua dụng cụ thể dục, thể thao và thể hình xin vui lòng liên hệ:</p>
+                    <div class="desc-by-ul-li">
+                        <ul>
+                            <li class="nav-item remove-margin">
+                                <strong>Hộ kinh doanh Quang Anh Sport</strong>
+                            </li>
+                            <li class="nav-item remove-margin">- Địa chỉ ĐKKD: 219 Định Công, Hoàng Mai, Hà Nội</li>
+                            <li class="nav-item remove-margin">- Điện thoại: 0939 987 456</li>
+                            <li class="nav-item remove-margin">- Email: lienhe@dungcutheduc.vn</li>
+                            <li class="nav-item remove-margin">- Giấy chứng nhận ĐKKD số 01M8027099 do phòng Tài chính - Kế hoạch quận Hoàng Mai cấp ngày 01/03/2021</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-main-right">
+                    <div class="footer-main-right-top">
+                        <div class="hanoi-contact">
+                            <h4 style="margin-bottom: 10px;">HÀ NỘI</h4>
+                            <ul class="remove-margin remove-padding" style="list-style: none;">
+                                <li class="nav-item remove-margin"><i class="fa-solid fa-location-dot"></i> Số 219 Định Công, Quận Hoàng Mai</li>
+                                <li class="nav-item remove-margin"><i class="fa-solid fa-square-phone"></i> 0939 987 456</li>
+                                <li class="nav-item remove-margin"><i class="fa-solid fa-road"></i> Xem sơ đồ đường đi</li>
+                            </ul>
+                        </div>
+                        <div class="hochiminh-contact">
+                            <h4 style="margin-bottom: 10px;">TP. HỒ CHÍ MINH</h4>
+                            <ul class="remove-margin remove-padding" style="list-style: none;">
+                                <li class="nav-item remove-margin"><i class="fa-solid fa-location-dot"></i> Cư xá Phú Lâm B, Phường 13, Quận 6</li>
+                                <li class="nav-item remove-margin"><i class="fa-solid fa-square-phone"></i> 0969 131 990</li>
+                                <li class="nav-item remove-margin"><i class="fa-solid fa-road"></i> Xem sơ đồ đường đi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-main-right-bottom">
+                        <div class="per-info-column">
+                            <h5>Sản phẩm</h5>
+                            <ul class="remove-padding" style="padding-left: 14px;">
+                                <li><a href="#" class="white-text">Xà đơn</a></li>
+                                <li><a href="#" class="white-text">Ghế tập tạ</a></li>
+                                <li><a href="#" class="white-text">Xe đạp tập</a></li>
+                                <li><a href="#" class="white-text">Máy chạy bộ</a></li>
+                                <li><a href="#" class="white-text">Bàn bóng bàn</a></li>
+                            </ul>
+                        </div>
+                        <div class="per-info-column">
+                            <h5>Thông tin</h5>
+                            <ul class="remove-padding" style="padding-left: 14px;">
+                                <li><a href="#" class="white-text">Giới thiệu</a></li>
+                                <li><a href="#" class="white-text">Cam kết khách hàng</a></li>
+                                <li><a href="#" class="white-text">Hướng dẫn mua hàng</a></li>
+                                <li><a href="#" class="white-text">Phương thức mua hàng</a></li>
+                                <li><a href="#" class="white-text">Vận chuyển & Giao hàng</a></li>
+                            </ul>
+                        </div>
+                        <div class="per-info-column">
+                            <h5>Chính sách</h5>
+                            <ul class="remove-padding" style="padding-left: 14px;">
+                                <li><a href="#" class="white-text">Chính sách đổi trả</a></li>
+                                <li><a href="#" class="white-text">Chính sách bảo mật</a></li>
+                                <li><a href="#" class="white-text">Bảo mật cá nhân</a></li>
+                                <li><a href="#" class="white-text">Điều khoản sử dụng</a></li>
+                                <li><a href="#" class="white-text">Chính sách bảo hành</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-container-bottom container">
+                <span>© 2024 Dụng Cụ Thể Dục</span>
+                <span>Mở cửa 09h đến 21h tất cả các ngày trong tuần</span>
+            </div>
+        </div>
+    </footer>
+    <div class="modalinup">
+        <div class="modal-login">
+            <div class="heading-modal">
+                <h2>ĐĂNG NHẬP</h2>
+                <i class="fa-solid fa-xmark" onclick="anmodal()"></i>
+            </div>
+            <div class="modal-content">
+                <form action="">
+                    <input type="text" title="Email" placeholder="Email của bạn...">
+                    <br>
+                    <input type="text" title="Mật khẩu"  placeholder="Mật khẩu của bạn...">
+                    <br>
+                    <a href="" class="forgot-pass">Quên mật khẩu?</a>
+                    <br>
+                    <button type="submit" class="btn">ĐĂNG NHẬP</button>
+                </form>
+                <div class="other-log-text">
+                    <p style="text-align: center;">hoặc đăng nhập bằng</p>
+                </div>
+                <div class="more-log-sign">
+                    <a href="">
+                        <i class="fa-brands fa-google"></i>
+
+                        Google
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        Facebook
+                    </a>
+                </div>
+                <div class="move-to-signup">
+                    <span>
+                        Bạn chưa có tài khoản? 
+                        <a href="#" onclick="hiensignup()">Đăng ký ngay!</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="modal-signup">
+            <div class="heading-modal">
+                <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+                <i class="fa-solid fa-xmark" onclick="anmodal()"></i>
+            </div>
+            <div class="modal-content">
+                <form action="">
+                    <input type="text" title="Email" placeholder="Họ và Tên">
+                    <br>
+                    <input type="text" title="Email" placeholder="Số điện thoại">
+                    <br>
+                    <input type="text" title="Email" placeholder="Địa chỉ">
+                    <br>
+                    <input type="text" title="Email" placeholder="Email">
+                    <br>
+                    <input type="text" title="Mật khẩu"  placeholder="Mật khẩu">
+                    <br>
+                    <br>
+                    <button type="submit" class="btn">TẠO TÀI KHOẢN</button>
+                </form>
+                <div class="other-log-text">
+                    <p>hoặc đăng ký bằng</p>
+                </div>
+                <div class="more-log-sign">
+                    <a href="">
+                        <i class="fa-brands fa-google"></i>
+
+                        Google
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        Facebook
+                    </a>
+                </div>
+                <div class="move-to-signup">
+                    <span>
+                        Bạn đã có tài khoản? 
+                        <a href="#" onclick="hienlogin()" >Đăng nhập!</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="support-bottom">
+        <div class="btn-float-container">
+            <a href="https://m.me/nthresol" target="_blank">
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <span>Chat Messenger</span>
+            </a>
+        </div>
+        <div class="btn-float-container" style="background-color: #fff;">
+            <a href="https://zalo.me/0939987456" target="_blank">
+                <img src="./assets/img/iconfloat/7044033_zalo_icon.png" alt="" style="margin-top: 5px;">
+                <span>Chat Zalo</span>
+            </a>
+        </div>
+        <div class="btn-float-container">
+            <a href="https://www.google.com/maps/place/D%E1%BB%A5ng+C%E1%BB%A5+Th%E1%BB%83+D%E1%BB%A5c/@20.9824348,105.8313898,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x8a6944497bca1f25!8m2!3d20.9824348!4d105.8335785" target="_blank">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <span>Vị trí</span>
+            </a>
+        </div>
+    </div>
+    <a href="#header" id="scroll-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <div class="hotline-float">
+        <a href="tel:0971425728">
+            <i class="fa-solid fa-phone"></i>
+            <span>0971 425 728</span>
+        </a>
+    </div>
+    <script src="anhienmodal.js"></script>
+    <script src="backtotop.js"></script>
+    <script src="scrollheader.js"></script>
+</body>
+</html>
