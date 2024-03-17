@@ -1053,6 +1053,7 @@ margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    box-shadow: 0 0px 1px rgba(0,0,0.2);
 }
 .btn-float-container a{
     font-size: 30px;
@@ -1106,37 +1107,73 @@ margin-bottom: 30px;
 
 /* Hoa don */
 .body-bill{
-    margin-top: 30px;
+    box-shadow: 0 1px 2px 1px #cccccc;
+    padding: 20px;
+    margin: 30px 0;
     background: #fff;
     border-bottom: 1px solid #d4d7d9;
 }
+.body-bill h2{
+    text-transform: uppercase;
+    color: #ed212d;
+    margin-bottom: 20px;
+}
 .check-out{
+    margin-top: 22px;
     display: flex;
     justify-content: space-evenly;
 }
 .btn-checkout{
-    padding: 10px 14px;
+    padding: 12px 18px;
+    font-size: 16px;
 }
 .input-quantity-cart{
     width: 40px;
     text-align: center;
     padding: 5px 10px;
+    border: 1px solid #f6f6f6;
+}
+thead{
+    font-weight: bolder;
 }
 .row-cart td{
     width: unset;
-    border: 1px solid #000;
+    border: 1px solid #f6f6f6;
     padding: 6px;
 }
 .row-cart td:nth-child(1){
     width: 100px;
 }
 .row-cart td:nth-child(2){
-    width: 40%;
+    width: 300px;
+}
+.row-cart td:nth-child(3){
+    width: 140px;
+}
+.row-cart td:nth-child(4){
+    width: 120px;
 }
 .row-cart td:nth-child(5){
-    width: 50px;
+    width: 40px;
+}
+.row-cart td:nth-child(6){
+    width: 120px;
+}
+.row-cart td:nth-child(7){
+    width: 40px;
 }
 .table-cart{
     text-align: center;
     padding: 0;
+}
+.total-price td{
+    text-align: right;
+    background-color: #fff;
+    font-weight: bolder;
+}
+.total-price td span:nth-child(2){
+    color: #ed212d;
+}
+.fa-trash-can{
+    color: #333;
 }

@@ -8,15 +8,15 @@
     <title>Document</title>
 </head>
 <body style="background: #f8f8f8;">
-    <header>
+    <header id="header">
         <div class="top-bar">
             <div class="container">
                 <ul class="list-nav-top">
                     <li><a href="">Giới thiệu</a></li>
                     <li><a href="">Vận chuyển & Thanh toán</a></li>
-                    <li><a href="">Tin tức</a></li>
                     <li><a href="">Hỏi đáp</a></li>
-                    <li><a href="">Liên hệ</a></li>
+                    <li><a href="#" onclick="hienlogin()">Đăng nhập</a></li>
+                    <li><a href="#" onclick="hiensignup()">Đăng ký</a></li>
                 </ul>
             </div>
         </div>
@@ -50,7 +50,7 @@
                             </a>
                         </div>
                         <div class="tool-cart" style="position: relative;">
-                            <a href="#">
+                            <a href="giohang.html">
                                 <span class="quantity-cart">0</span>
                                 <i class="fa-solid fa-cart-shopping phone-icon"></i>
                                 <span style="display: inline-block;">
@@ -63,12 +63,12 @@
             </div>
         </div>
 
-        <div class="bottom-bar">
+        <div class="bottom-bar" id="header-float">
             <div class="container">
                 <nav>
                     <ul>
                         <li style="padding-right: 10px;">
-                            <a href="">
+                            <a href="" style="color: #ed212d;">
                                 <i class="fa-solid fa-house"></i>
                             </a>
                         </li>
@@ -84,7 +84,7 @@
                             </ul>
                         </li>
                         <li class="menu-2">
-                            <a href="">
+                            <a href="dungcu.html">
                                 Dụng cụ tập gym <i class="fa-solid fa-caret-down"></i>
                             </a>
                             <ul class="mini-nav">
@@ -153,6 +153,7 @@
                 </nav>
             </div>
         </div>
+        
     </header>
     <div class="body-product">
         <div class="breadcrumb">
@@ -555,5 +556,118 @@
             </div>
         </div>
     </footer>
+    <div class="modalinup">
+        <div class="modal-login">
+            <div class="heading-modal">
+                <h2>ĐĂNG NHẬP</h2>
+                <i class="fa-solid fa-xmark" onclick="anmodal()"></i>
+            </div>
+            <div class="modal-content">
+                <form action="">
+                    <input type="text" title="Email" placeholder="Email của bạn...">
+                    <br>
+                    <input type="text" title="Mật khẩu"  placeholder="Mật khẩu của bạn...">
+                    <br>
+                    <a href="" class="forgot-pass">Quên mật khẩu?</a>
+                    <br>
+                    <button type="submit" class="btn">ĐĂNG NHẬP</button>
+                </form>
+                <div class="other-log-text">
+                    <p style="text-align: center;">hoặc đăng nhập bằng</p>
+                </div>
+                <div class="more-log-sign">
+                    <a href="">
+                        <i class="fa-brands fa-google"></i>
+
+                        Google
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        Facebook
+                    </a>
+                </div>
+                <div class="move-to-signup">
+                    <span>
+                        Bạn chưa có tài khoản? 
+                        <a href="#" onclick="hiensignup()">Đăng ký ngay!</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="modal-signup">
+            <div class="heading-modal">
+                <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+                <i class="fa-solid fa-xmark" onclick="anmodal()"></i>
+            </div>
+            <div class="modal-content">
+                <form action="">
+                    <input type="text" title="Email" placeholder="Họ và Tên">
+                    <br>
+                    <input type="text" title="Email" placeholder="Số điện thoại">
+                    <br>
+                    <input type="text" title="Email" placeholder="Địa chỉ">
+                    <br>
+                    <input type="text" title="Email" placeholder="Email">
+                    <br>
+                    <input type="text" title="Mật khẩu"  placeholder="Mật khẩu">
+                    <br>
+                    <br>
+                    <button type="submit" class="btn">TẠO TÀI KHOẢN</button>
+                </form>
+                <div class="other-log-text">
+                    <p>hoặc đăng ký bằng</p>
+                </div>
+                <div class="more-log-sign">
+                    <a href="">
+                        <i class="fa-brands fa-google"></i>
+
+                        Google
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        Facebook
+                    </a>
+                </div>
+                <div class="move-to-signup">
+                    <span>
+                        Bạn đã có tài khoản? 
+                        <a href="#" onclick="hienlogin()" >Đăng nhập!</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="support-bottom">
+        <div class="btn-float-container">
+            <a href="https://m.me/nthresol" target="_blank">
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <span>Chat Messenger</span>
+            </a>
+        </div>
+        <div class="btn-float-container" style="background-color: #fff;">
+            <a href="https://zalo.me/0939987456" target="_blank">
+                <img src="./assets/img/iconfloat/7044033_zalo_icon.png" alt="" style="margin-top: 5px;">
+                <span>Chat Zalo</span>
+            </a>
+        </div>
+        <div class="btn-float-container">
+            <a href="https://www.google.com/maps/place/D%E1%BB%A5ng+C%E1%BB%A5+Th%E1%BB%83+D%E1%BB%A5c/@20.9824348,105.8313898,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x8a6944497bca1f25!8m2!3d20.9824348!4d105.8335785" target="_blank">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <span>Vị trí</span>
+            </a>
+        </div>
+    </div>
+    <a href="#header" id="scroll-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <div class="hotline-float">
+        <a href="tel:0971425728">
+            <i class="fa-solid fa-phone"></i>
+            <span>0971 425 728</span>
+        </a>
+    </div>
+    <script src="anhienmodal.js"></script>
+    <script src="backtotop.js"></script>
+    <script src="scrollheader.js"></script>
 </body>
 </html>
