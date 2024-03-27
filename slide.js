@@ -1,3 +1,5 @@
+// Slide
+
 let slideIndex = 0
 let slides = document.querySelectorAll(".mySlides")
 let dots = document.querySelectorAll(".dot")

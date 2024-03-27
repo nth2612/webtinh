@@ -1,3 +1,29 @@
+// Hiển thị thanh nav fixed
+const headerfloat = document.getElementById("header-float")
+const header = document.getElementById("header")
+const headerHeight = header.offsetHeight
+window.addEventListener("scroll" , function() {
+    if(window.pageYOffset > headerHeight){
+        headerfloat.classList.add("active-float")
+    }
+    else{
+        headerfloat.classList.remove("active-float")
+    }
+})
+
+// Quay lại đầu trang
+const aback = document.getElementById("scroll-to-top")
+
+window.addEventListener("scroll" , function() {
+    if(window.pageYOffset > 300){
+        aback.style.opacity = 1
+    }
+    else{
+        aback.style.opacity = 0
+    }
+})
+
+// Modal đăng nhập đăng ký
 var modallogin = document.querySelector(".modal-login")
 var modalsignup = document.querySelector(".modal-signup")
 var modal = document.querySelector(".modalinup")
