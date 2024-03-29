@@ -767,6 +767,38 @@ textarea{
 .send-comment button{
     padding: 12px 20px;
 }
+.block-comment{
+    display: flex;
+    margin-top: 20px;
+}
+.comment-list{
+    margin-top: 40px;
+}
+.block-comment.reply{
+    margin: 0;
+    padding-left: 4px;
+    border-left: 2px solid #a7a9ac;
+}
+.block-comment.reply .avt-comment{
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.avt-comment{
+    width: 60px;
+    height: 60px;
+}
+.user-comment-name{
+    margin: 4px 0 8px;
+}
+.content-comment{
+    flex-basis: 93%;
+    padding: 0 6px 6px 14px;
+}
+.content-comment p{
+    padding: 12px;
+    background: #fff;
+}
 
 
 
