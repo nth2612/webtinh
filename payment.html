@@ -156,72 +156,76 @@
         </div>
         
     </header>
-    <div class="main-bill">
+    <div class="main-payment">
         <div class="container2">
-            <div class="body-bill">
-                <h2>Giỏ Hàng</h2>
-                <!-- <div style="border: 1px solid #d6e9c6;padding: 15px;color: #3c763d;text-align: center;">
-                    <p style="font-size: 20px;">Giỏ hàng của bạn đang trống</p>
-                    <img src="./assets/empty-cart.png" alt="" style="margin: 10px 0;">
-                    <a href="" type="button" style="padding: 12px;background-color: #ed212d;color: #fff;border-radius: 2px;">Trở về trang chủ</a>
-                </div> -->
-                <form action="">
-                    <table class="table-cart">
-                        <thead class="head-cart">
-                            <tr class="row-cart">
-                                <td class="td-img">Ảnh</td>
-                                <td>Tên sản phẩm</td>
-                                <td>SKU</td>
-                                <td>Đơn giá</td>
-                                <td>Số lượng</td>
-                                <td>Thành tiền</td>
-                                <td>Xóa</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="row-cart">
-                                <td class="td-img">
-                                    <a href="">
-                                        <img 
-                                    src="./assets/img/productimg/dungcubongban/votbongban/vot-bong-ban-729-2060-carbon.jpg" alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <p>Vợt bóng bàn 2060 carbon</p>
-                                </td>
-                                <td>
-                                    Carbon
-                                </td>
-                                <td>
-                                    500.000đ
-                                </td>
-                                <td>
-                                    <input type="text" value="2" class="input-quantity-cart">
-                                </td>
-                                <td>
-                                    1.000.000đ
-                                </td>
-                                <td>
-                                    <a href="">
-                                        <i class="fa-solid fa-trash-can"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="total-price">
-                                <td colspan="7">
-                                    <span>Tổng tiền: </span>
-                                    <span>1.000.000đ</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="check-out">
-                        <a href="payment.html" type="submit" class="btn btn-checkout">THANH TOÁN</a>
-                    </div>
-                </form>
+            <div class="checkout">
+                <h3>THANH TOÁN</h3>
+                <p>Để hoàn tất việc mua hàng, quý khách vui lòng điền đầy đủ thông tin vào form dưới đây.</p>
+                <div class="box-checkout">
+                    <form action="">
+                        <div class="field-check">
+                            <h4>Thông tin khách hàng</h4>
+                            <div class="checkout-input">
+                                <label for="">Họ và tên *</label>
+                                <input type="text">
+                            </div>
+                            <br>
+                            <div class="checkout-input">
+                                <label for="">Số điện thoại *</label>
+                                <input type="text">
+                            </div>
+                            <br>
+                            <div class="checkout-input">
+                                <label for="">Tỉnh/thành phố *</label>
+                                <select name="provinces" id="provinces">
+                                    <option value="0" selected="true" disabled="true">--Chọn tỉnh thành--</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="checkout-input">
+                                <label for="">Quận/huyện *</label>
+                                <select name="districts" id="districts">
+                                    <option value="0" selected="true" disabled="true">--Chọn quận/huyện--</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="checkout-input">
+                                <label for="">Phường/xã.. *</label>
+                                <select name="wards" id="wards">
+                                    <option value="0" selected="true" disabled="true">--Chọn phường/xã--</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="checkout-input">
+                                <label for="">Số nhà, đường,..</label>
+                                <input type="text" placeholder="Số nhà, tên đường, thôn,..">
+                            </div>
+                        </div>
+                        <div class="field-check">
+                            <h4>Thanh toán & vận chuyển</h4>
+                            <div class="checkout-input">
+                                <label for="">Thanh toán </label>
+                                <div style="width: 300px; display: inline-block;text-align: left;">
+                                    <input type="radio" checked>
+                                    <span>Thanh toán khi nhận hàng (COD)</span>
+                                </div>
+                            </div>
+                            <br>
+                            <textarea name="" id="" placeholder="Lưu ý, ghi chú về đơn hàng, chi tiết địa chỉ,... (Không bắt buộc)"></textarea>
+                        </div>
+                        <div class="field-check" style="text-align: right; margin-top: 20px;">
+                            <p style="font-size: 20px;display: none;" class="phivanchuyen">Phí vận chuyển: 50.000đ</p>
+                            <!-- <p style="font-size: 28px; padding: 10px 0;">Tổng tiền: 590.000đ</p> -->
+                        </div>
+                        <div style="text-align: center;margin-top: 20px;">
+                            <button class="btn btn-checkout" type="submit">Hoàn thành đặt hàng</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+    <script src="fetchprovince.js"></script>
     <footer id="footer">
         <div class="footer-top">
             <div class="container footer-top-container">

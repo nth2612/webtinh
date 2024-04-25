@@ -3,7 +3,7 @@ const headerfloat = document.getElementById("header-float")
 const header = document.getElementById("header")
 const headerHeight = header.offsetHeight
 window.addEventListener("scroll" , function() {
-    if(window.pageYOffset > headerHeight){
+    if(window.scrollY > headerHeight){
         headerfloat.classList.add("active-float")
     }
     else{
@@ -15,11 +15,13 @@ window.addEventListener("scroll" , function() {
 const aback = document.getElementById("scroll-to-top")
 
 window.addEventListener("scroll" , function() {
-    if(window.pageYOffset > 300){
-        aback.style.opacity = 1
+    if(window.scrollY > 300){
+        aback.style.opacity = 1;
+        aback.style.display = 'inline-block'
     }
     else{
-        aback.style.opacity = 0
+        aback.style.opacity = 0;
+        aback.style.display = 'none'
     }
 })
 

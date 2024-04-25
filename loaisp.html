@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dụng cụ thể dục thể thao</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./assets/img/ico/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -15,7 +14,7 @@
                 <ul class="list-nav-top">
                     <li><a href="">Giới thiệu</a></li>
                     <li><a href="">Vận chuyển & Thanh toán</a></li>
-                    <li><a href="faqs.html">Hỏi đáp</a></li>
+                    <li><a href="">Hỏi đáp</a></li>
                     <li><a href="#" onclick="hienlogin()">Đăng nhập</a></li>
                     <li><a href="#" onclick="hiensignup()">Đăng ký</a></li>
                 </ul>
@@ -181,10 +180,6 @@
                         <span>Ghế tập tạ</span>
                     </span>
                     <span class="choosed-filter">
-                        <a href="">
-                            Dưới 5 triệu
-                            <i class="fa-solid fa-xmark"></i>
-                        </a>
                     </span>
                 </div>
                 <div class="option-filter">
@@ -192,24 +187,34 @@
                         <span class="text-in-filter">Khoảng giá</span>
                         <ul class="filter-option">
                             <li>
-                                <input type="radio" name="" id="">
-                                <label for="">Dưới 1 triệu</label>
+                                <a href="">
+                                    <input type="radio" name="price" id="">
+                                    <label for="">Dưới 1 triệu</label>
+                                </a>
                             </li>
                             <li>
-                                <input type="radio" name="" id="">
-                                <label for="">1-2 triệu</label>
+                                <a href="">
+                                    <input type="radio" name="price" id="">
+                                    <label for="">1-2 triệu</label>
+                                </a>
                             </li>
                             <li>
-                                <input type="radio" name="" id="">
-                                <label for="">2-5 triệu</label>
+                                <a href="">
+                                    <input type="radio" name="price" id="">
+                                    <label for="">2-5 triệu</label>
+                                </a>
                             </li>
                             <li>
-                                <input type="radio" name="" id="">
-                                <label for="">5-10 triệu</label>
+                                <a href="">
+                                    <input type="radio" name="price" id="">
+                                    <label for="">5-10 triệu</label>
+                                </a>
                             </li>
                             <li>
-                                <input type="radio" name="" id="">
-                                <label for="">10-20 triệu</label>
+                                <a href="">
+                                    <input type="radio" name="price" id="">
+                                    <label for="">10-20 triệu</label>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -217,20 +222,22 @@
                         <span class="text-in-filter">Sắp xếp theo</span>
                         <ul class="filter-option">
                             <li>
-                                <input type="radio" name="" id="">
-                                <label for="">Bán chạy nhất</label>
+                                <a href="">
+                                    <input type="radio" name="arrange" id="" checked>
+                                    <label for="">Sản phẩm mới</label>
+                                </a>
                             </li>
                             <li>
-                                <input type="radio" name="" id="">
-                                <label for="">Sản phẩm mới</label>
+                                <a href="">
+                                    <input type="radio" name="arrange" id="">
+                                    <label for="">Giá tăng dần</label>
+                                </a>
                             </li>
                             <li>
-                                <input type="radio" name="" id="">
-                                <label for="">Giá tăng dần</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="" id="">
-                                <label for="">Giá giảm dần</label>
+                                <a href="">
+                                    <input type="radio" name="arrange" id="">
+                                    <label for="">Giá giảm dần</label>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -506,6 +513,15 @@
                     </div>
                 </div>
             </div>
+            <div class="paging">
+                <ul class="list-page">
+                    <li><a href="#" class="link-page disable-page"><i class="fa-solid fa-angle-left"></i></a></li>
+                    <li><a href="#" class="link-page page-num active-page">1</a></li>
+                    <li><a href="#" class="link-page page-num">2</a></li>
+                    <li><a href="#" class="link-page page-num">3</a></li>
+                    <li><a href="#" class="link-page"><i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <footer>
@@ -732,5 +748,7 @@
         </a>
     </div>
     <script src="tonghop.js"></script>
+    <script src="filter.js"></script>
+    <script src="choosePage.js"></script>
 </body>
 </html>
