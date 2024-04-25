@@ -1360,3 +1360,6 @@ thead{
 .loichao p a{
     color: #333;
 }
+.loichao p a:hover{
+    color: #ed212d;
+}
